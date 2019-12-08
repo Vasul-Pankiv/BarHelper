@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    >
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:text="Данні про вибраний алкоголь"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введіть назву алкоголю"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/weight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введіть розмір пляшки"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/weight2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введіть вагу повної пляшки"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/weight3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введіть вагу пустої пляшки"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="25dp"
+        android:text="Конвертація"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="1"
+            android:text="вкажіть вагу бутилки з алкоголем"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:id="@+id/field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/textView4">
+
+            <EditText
+                android:id="@+id/vagaBottle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:textColorLink="@color/colorPrimaryDark"
+                android:textSize="18sp" />
+
+            <ImageButton
+                android:id="@+id/convert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/button"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="10dp"
+                app:srcCompat="@drawable/reload" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/volume"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/field"
+            android:layout_alignStart="@+id/field"
+            android:layout_alignEnd="@+id/field"
+            android:layout_centerInParent="true"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent"
+            android:textSize="36sp" />
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>
